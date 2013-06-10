@@ -55,26 +55,38 @@ following commands to make and build the project:
         
 * There are some test files to try the project in the TestFiles 
 directory.
+* To run the program enter the command
+
+        $ ./ComputerSim
+
 * You can open any of those file with the open button pinned to 
-the quick access toolbar 
+the quick access toolbar (Hover over the "ComputerSimGUI" menu and a "file" option will appear,
+from the file option a file can opened and then later saved.
 * Once the file has been loaded the GUI's interface should be 
 pretty straight forward.
 
 Using the Breakpoint
 * There is an enable Breakpoint button that toggles the breakline spinbox on and off.
 * The breakline spinbox is initialized to zero. 
-     a) A valid breakline can be any number from 1-127
+  
+   a) A valid breakline can be any number from 1-127
   	    note: 128 is the max number of instructions, and you can only step to the first (0th) instruction.
+
    b) A valid breakline will be highlighted yellow.
 
 * There can only be one breakpoint at a time, if a second breakpoint is desired it can be set after
    the first breakpoint is reached
 
 * The breakpoint feature is disabled and reset when:
+
    a) The breakline is reached.
+   
    b) The program clears or resets.
+   
    c) The breakpoint button is toggled.
 
 * When the breakpoint feature is disabled: 
+
    a) The spinbox is not selectable and is defaulted to zero.
+   
    b) The selected breakline is unhighlighted.
