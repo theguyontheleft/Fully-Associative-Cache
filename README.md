@@ -61,7 +61,7 @@ directory.
 
 * You can open any of those file with the open button pinned to 
 the quick access toolbar (Hover over the "ComputerSimGUI" menu and a "file" option will appear,
-from the file option a file can opened and then later saved.
+from the file option a file can opened and then later saved)
 * Once the file has been loaded the GUI's interface should be 
 pretty straight forward.
 
