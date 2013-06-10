@@ -1,0 +1,22 @@
+OUT "***** Test 3 *****************"
+OUT " " 
+OUT "This program should fill up "
+OUT " data memory with the value at"
+OUT " each location being its "
+OUT " address. The program uses the"
+OUT " new instructions STOREA and "
+OUT " LOADA."
+OUT " " 
+OUT "******************************"
+CLEAR
+ADDV 511
+STORE 0
+CLEAR
+NOP
+LOAD 0
+STOREA 0
+LOADA
+ADDV -1
+STORE 0
+BGTZ 14
+HALT

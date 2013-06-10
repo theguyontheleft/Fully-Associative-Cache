@@ -1,0 +1,58 @@
+CLEAR
+ADDV 10
+STORE 0
+LOAD 0
+OUT "***** Test 2 *****************"
+OUT " " 
+OUT "This program tests the cache "
+OUT " behavior. In particular, the"
+OUT " the STORE to address 0x40 "
+OUT " always knock the value at address"
+OUT " 0x000 out of the cache."
+OUT " "
+OUT "------------------------------ "
+OUT " "
+OUT "The value at address 0 is %A."
+ADDV 1
+STORE 1
+LOAD 1
+OUT "The value at address 1 is %A."
+ADDV 1
+STORE 40
+LOAD 40
+OUT "The value at address 0x40 is %A."
+ADDV 1
+STORE 41
+LOAD 41
+OUT "The value at address 0x41 is %A."
+ADDV 1
+STORE 45
+LOAD 45
+OUT "The value at address 0x45 is %A."
+ADDV 1
+STORE 86
+LOAD 86
+OUT "The value at address 0x86 is %A."
+ADDV 1
+STORE 107
+LOAD 107
+OUT "The value at address 0x107 is %A."
+ADDV 1
+STORE 108
+LOAD 108
+OUT "The value at address 0x108 is %A."
+ADDV 1
+STORE 109
+LOAD 109
+OUT "The value at address 0x109 is %A."
+ADDV 1
+STORE 11a
+LOAD 11a
+OUT "The value at address 0x11A is %A."
+ADDV 1
+STORE 11b
+LOAD 11b
+OUT "The value at address 0x11B is %A."
+OUT " "
+OUT "******************************"
+HALT

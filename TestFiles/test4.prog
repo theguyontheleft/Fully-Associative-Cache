@@ -1,0 +1,38 @@
+OUT "***** Test X *****************"
+OUT " " 
+OUT " This program should repeatedly "
+OUT " write values from 50 to -39 in data "
+OUT " addresses 1 to 9. The program "
+OUT " used the new instructions STOREA "
+OUT " STOREA and LOADA."
+OUT " "
+OUT "******************************"
+CLEAR
+ADDV 51
+STORE 00A
+CLEAR
+ADDV 10
+STORE 00B
+CLEAR
+NOP
+CLEAR
+ADDV 9
+STORE 00C
+NOP
+CLEAR
+LOAD 00A
+ADDV -1
+STOREA 00C
+STORE 00A
+CLEAR
+ADDV 12
+LOADA
+ADDV -1
+STORE 00C
+BGTZ 20
+STORE 10A
+LOAD 00B
+ADDV -1
+STORE 00B
+BGTZ 16
+HALT

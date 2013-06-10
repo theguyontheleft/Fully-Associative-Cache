@@ -1,0 +1,32 @@
+CLEAR
+ADDV 511
+STORE 001
+CLEAR
+ADDV 1
+LOADA
+OUT "***** Test 1 *************"
+OUT " " 
+OUT "The accumulator value %A"
+OUT " should be 511."
+OUT " " 
+CLEAR
+ADDV 2
+STORE 003
+CLEAR
+LOAD 001
+ADDV 1
+STOREA 003
+LOAD 002
+OUT "The accumulator value %A"
+OUT " should be -512"
+OUT " " 
+OUT "After the cache is flushed"
+OUT " the values in data memory"
+OUT " should be:"
+OUT " 000       0"
+OUT " 001     511"
+OUT " 002    -512"
+OUT " 003       2"
+OUT " " 
+OUT "**************************"
+HALT
